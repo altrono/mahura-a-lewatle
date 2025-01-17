@@ -31,13 +31,23 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Supports & Contacts</h3>
             <ul className="space-y-2">
-              {["Phone: [Your Contact Number]","Email: [Your Contact Email]", "Address: [Your Business Address]",].map((item) => (
+              {["Address: [Your Business Address]",].map((item) => (
                 <li key={item}>
                   <Link href="#" className="text-sm hover:text-teal-500 transition-all duration-300">
                     {item}
                   </Link>
                 </li>
               ))}
+              <li key={"email"}>
+              Email: <Link href="mailto:info@mahuralewatle.co.za?subject=Hello&body=I would like to get in touch." className="text-sm hover:text-teal-500 transition-all duration-300">
+                   info@mahuralewatle.co.za
+                  </Link>
+              </li>
+              <li key={"phone"}>
+              Phone: <Link href="tel:+27721896531" className="text-sm hover:text-teal-500 transition-all duration-300">
+                     +27 72 189 6531
+                  </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -52,7 +62,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
-          <p className="text-md font-bold">&copy; 2025 Altro.<span className="text-teal-500 text-md font-bold">Tech</span> . All rights reserved.</p>
+          <p className="text-md font-bold">&copy; 2025 Altro<span className="text-teal-500 text-md font-bold">Tech</span> . All rights reserved.</p>
         </div>
       </div>
     </footer>
