@@ -8,23 +8,24 @@ const inter = Inter({ subsets: ["latin"] })
 
 
 export const metadata: Metadata = {
-  title: "Best Salon in Cape Town | Manicures, Pedicures, Haircuts & More | Long Street",
-  description: "Located on Long Street in Cape Town, we provide premium beauty services such as manicures, pedicures, haircuts, trimming, and foot therapy. Book your appointment now!",
-  keywords: "Cape Town salon, manicure, pedicure, haircut, trimming, foot therapy, beauty services, Long Street salon, spa treatments, best salon in Cape Town, hair, nails",
+  title: "MAHURA A LEWATLE PTY (LTD)| Reliable Water Supply & Groundwater Services | Borehole Drilling, Geophysical Surveys, and More",
+  description: "We specialize in sustainable water solutions, including rural area water supply, groundwater assessment, and geophysical surveys. Serving communities with expert borehole drilling and management across South Africa, including Western Cape, North West, Northern Cape, and Gauteng.",
+  keywords: "water supply, rural water solutions, borehole drilling, groundwater assessment, geophysical surveys, geological mapping, water management, sustainable water solutions, rural water supply services, aquifer development, groundwater management, South Africa, Western Cape, North West, Northern Cape, Gauteng",
   icons: {
     icon: '/logo.png'
   },
   openGraph: {
-    title: "Best Salon in Cape Town | Manicures, Pedicures, Haircuts & More",
-    description: "Top-tier beauty services in Cape Town. Manicures, pedicures, haircuts, trimming, foot therapy, and more. Experience the best salon on Long Street.",
-    url: "https://mahura-a-lewatle.vercel.app/",
-  // Replace with an actual image URL for social media sharing
+    title: "Reliable Water Supply & Groundwater Services | Borehole Drilling, Geophysical Surveys, and More",
+    description: "Providing sustainable water solutions including borehole drilling, groundwater assessment, and geophysical surveys. Helping rural areas access clean water with expert services in South Africa, including Western Cape, North West, Northern Cape, and Gauteng.",
+    url: "https://mahura-a-lewatle.vercel.app/", // Replace with your actual website URL
+    // Replace with an actual image URL for social media sharing // Add a relevant image URL
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Salon in Cape Town | Manicures, Pedicures, Haircuts & More",
-    description: "We offer top beauty services like manicures, pedicures, haircuts, trimming, and foot therapy in the heart of Cape Town's Long Street.",
-  // Replace with actual image URL for Twitter sharing
+    title: "Reliable Water Supply & Groundwater Services | Borehole Drilling, Geophysical Surveys, and More",
+    description: "Expert borehole drilling, groundwater assessment, and sustainable water management solutions for rural communities across South Africa, including Western Cape, North West, Northern Cape, and Gauteng.",
+    
+    // Replace with actual image URL for Twitter sharing // Add a relevant image URL
   },
   robots: {
     index: true,
