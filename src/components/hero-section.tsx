@@ -44,7 +44,7 @@ export function HeroSection() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.9 }}
             className="flex flex-col sm:flex-row  max-w-md mx-auto mt-10">
-                 <Button className="bg-gradient-to-tr from-teal-700 to-[#bdd364] text-white hover:to-teal-700 hover:from-[#bdd364] -ml-2 rounded-md mx-auto transition-colors duration-500">
+                 <Button className="bg-gradient-to-tr from-teal-700 to-lightBlue text-white hover:to-teal-700 hover:from-lightBlue -ml-2 rounded-md mx-auto transition-colors duration-500">
                   Request a Free Consultation
                   <span className="ml-2">→</span>
                 </Button>

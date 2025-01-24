@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { NavigationMenuDemo } from "./NavigationMenu"
 import Image from "next/image"
+import { CustomDialog } from "../custom-dialog"
 
 
 export function SiteHeader() {
@@ -46,17 +47,7 @@ export function SiteHeader() {
 
           {/* Mobile Navigation */}
           <div className="flex items-center gap-4">
-            <Button
-  
-              className={`rounded-md transition-colors duration-300 ${
-                isScrolled 
-                  ? 'bg-gradient-to-tr from-teal-700 to-[#bdd364] text-white hover:to-teal-500 hover:from-[#bdd364] -ml-2 rounded-md mx-auto transition-colors duration-500' 
-                  : 'bg-teal-400 text-[#bdd364] hover:bg-teal-500'
-              }`}
-            >
-              <p className="text-white/90 hover:text-white">Request a Quote</p>
-            </Button>
-
+            <CustomDialog />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
                 <Button

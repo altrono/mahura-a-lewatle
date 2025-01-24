@@ -3,6 +3,7 @@ import { Footer } from "@/components/marketing/footer"
 import { ScrollToTop } from "@/components/marketing/scroll-to-top"
 
 
+
 export default function MarketingLayout({
   children,
 }: {

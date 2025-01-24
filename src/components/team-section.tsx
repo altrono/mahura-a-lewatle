@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function TeamSection() {
   return (
-    <section className="py-20 bg-white dark:bg-slate-950 px-5 max-w-7xl mx-auto ">
+    <section className="py-20 bg-gray-200 px-5 ">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div

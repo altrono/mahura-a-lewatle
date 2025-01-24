@@ -1,32 +1,32 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Button } from "../ui/button"
 
 
 export function AboutUsSection() {
   return (
    
-            <section id="about-us" className="md:pb-20  bg-black rounded-t-lg bg-[url('/group123.svg')] bg-cover bg-bottom] pt-20 px-4">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="w-full flex items-center justify-center"
-              >
-                <div className="bg-black/30 border-none p-10  flex items-center  rounded-md  flex-col gap-4   max-w-4xl mx-auto h-full">
-                    <h2 className="text-3xl text-teal-500  font-bold">About Us</h2>
-                    <p className="text-white">At <span className="text-[#bdd364] font-bold text-center">MAHURA A LEWATLE</span>, we specialize in delivering sustainable water supply solutions and comprehensive groundwater management. Our core services are designed to support rural communities and industries that depend on reliable access to clean water. With advanced technology and years of expertise, we ensure that your water needs are met efficiently and effectively.</p>
-                    <div className="flex flex-col sm:flex-row  max-w-md mx-auto">
-                    <Button className="bg-gradient-to-tr from-teal-700 to-[#
-                    bdd364] text-white hover:to-teal-500 hover:from-[#bdd364] -ml-2 rounded-md mx-auto transition-colors duration-500">
-                      Request a Free Consultation
-                      <span className="ml-2">→</span>
-                    </Button>
-                  </div>
-                </div>
-             </motion.div>  
+            <section id="about-us" className="bg-white  bg-[url('/finger.png')] bg-cover bg-bottom] ">
+              <div className="px-4 flex  flex-col md:flex-row w-full h-full py-20 md:px-20 bg-lightBlue/50  min-h-[400px]">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="w-full px-4"
+                >      
+                  <h2 className="text-lightBlue text-4xl md:text-6xl font-bold mb-4">About <span className="text-lightGreen">Us</span></h2>
+                  <p className="text-white text-lg font-medium">Empowering Growth Through Water, Agriculture, and Skill Development</p>      
+                </motion.div> 
+                <motion.div 
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.9 }}
+                  viewport={{ once: true }}
+                  className=" py-8 px-4">
+                  <p className="text-white font-medium text-lg">At <span className="text-lightBlue font-bold">MAHURALEWATLE</span>, we are committed to driving sustainable development and empowering communities through our comprehensive solutions in drilling, farming, and maritime training. With a focus on innovation, quality, and expertise, we provide reliable services that meet the needs of both rural and urban areas</p>
+                </motion.div>   
+              </div> 
             </section>
           
   )

@@ -4,6 +4,7 @@ import { TeamCarousel } from "@/components/marketing/TeamCarousel"
 import { Services } from "@/components/services-section"
 
 
+
 // import { FeaturesSection } from "@/components/features-section"
 // import { TeamSection } from "@/components/team-section"
 // import { TestimonialsSection } from "@/components/testimonials-section"
@@ -15,15 +16,15 @@ import { Services } from "@/components/services-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-white">
       
       <HeroSection /> 
+      <AboutUsSection />
       <Services />
       <TeamCarousel />
-      <AboutUsSection />
+      {/* <TeamSection /> */}
       {/* <MissionSection />
       <TeamSection />
-      <ServicesSection />
       <FeaturesSection />
       <TestimonialsSection />      
       <CTASection />    */}

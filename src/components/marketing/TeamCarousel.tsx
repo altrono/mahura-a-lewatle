@@ -10,8 +10,8 @@ export function TeamCarousel() {
 
   return (
     <section className="bg-white w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-[#648ed3]">
-        Why Choose Us?
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-darkTeal">
+        Expore <span className="text-lightBlue">Our Works</span>
       </h2>
       <Carousel items={cards} />
     </section>
@@ -67,19 +67,19 @@ const data = [
   {
     category: "Customized Approach",
     title: "we provide personalized solutions based on your specific needs and location.",
-    src: "/pic-3.png",
+    src: "/pic-3.jpg",
     content: <DummyContent />,
   },
   {
     category: "iOS",
     title: "Photography just got better.",
-    src: "/pic-2.png",
+    src: "/pic-4.jpg",
     content: <DummyContent />,
   },
   {
     category: "Hiring",
     title: "Hiring for a Staff Software Engineer",
-    src: "/pic-3.png",
+    src: "/pic-5.png",
     content: <DummyContent />,
   },
 ];
