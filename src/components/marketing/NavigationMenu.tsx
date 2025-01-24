@@ -15,22 +15,49 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import Image from "next/image"
+// import { usePathname } from "next/navigation"
 
-
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Our Values",
+    href: "/about",
+    description:
+      "We believe in innovation, integrity, and excellence. Our values guide every project we take on and every partnership we build",
+  },
+  {
+    title: "Join Us",
+    href: "/join-us",
+    description:
+      "Looking for a career in tech? We&#39;re always seeking passionate, driven individuals to join our team. Check out open positions and apply today!",
+  },
+  {
+    title: "Partner with Us",
+    href: "/partner-with-us",
+    description:
+      "We value long-term partnerships with businesses aiming for digital growth. Let&#39;s collaborate to create impactful solutions together.",
+  },
+  {
+    title: "Terms & Conditions",
+    href: "/terms-and-conditions",
+    description:
+      "We believe in the power of innovation and support startups with funding and mentorship. Explore opportunities to partner with us in driving the next big idea.",
+  },
+]
 
 export function NavigationMenuDemo() {
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-teal-500`} >
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-noire`} >
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={`text-teal-500`}>
+          <NavigationMenuTrigger className={`text-noire`}>
             Services
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -39,35 +66,52 @@ export function NavigationMenuDemo() {
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="#about"
+                    href="/"
                   >
                     
                     <Image alt="logo" src="/logo.png" width={100} height={100} className="rounded-full" />
                     <div className=" text-md font-medium text-teal-500">
                     Mahura A Lewatle Trading Pty Ltd
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
+                    <p className="text-sm mt-4 leading-tight text-muted-foreground">
                     Travel & Transportation And Other Business
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="#service-1" title="💧 Rural Area Water Supply through Drilling & Equipping Boreholes">
-              We provide tailored water supply solutions for rural areas by drilling boreholes and equipping them with the necessary infrastructure to ensure a sustainable and clean water supply. Whether you&#39;re a local government, NGO, or a private entity, our expertise in borehole drilling ensures that your community or project has access to safe drinking water.
+              <ListItem href="/services/drilling" title="💧 Drilling">
+              Water resource management and infrastructure in rural areas. 
               </ListItem>
-              <ListItem href="#service-2" title="💧 Groundwater Assessment, Development & Management">
-              Understanding the dynamics of groundwater is essential for sustainable water use. Our comprehensive groundwater services cover assessment, development, and long-term management of aquifers to ensure efficient resource utilization.
+              <ListItem href="/services/farming" title="💧 Farming">
+              Empowering Farmers with Advanced Water & Land Management.
               </ListItem>
-              <ListItem href="#service-3" title="💧 Geophysical Survey & Geological Mapping">
-              To ensure the success of water projects, understanding the geological and geophysical conditions of the area is essential. Our geophysical survey and geological mapping services provide crucial data to guide decision-making for water resource development.</ListItem>
+              <ListItem href="/services/training" title="💧 Malt Training">
+              Trains and Prepares competent and skilled seafarers for the oil and gas, offshore, merchant navy and port operations in the maritime sectors..
+              </ListItem>
              
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#about-us" legacyBehavior passHref>
-            <NavigationMenuLink className={`text-teal-500 ${navigationMenuTriggerStyle()}`}>
-              About Us
+          <NavigationMenuTrigger className={`text-noire`}>About</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/blog" legacyBehavior passHref>
+            <NavigationMenuLink className={`text-noire ${navigationMenuTriggerStyle()}`}>
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -92,7 +136,7 @@ const  ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-[12px] font-medium leading-none text-teal-500">{title}</div>
+          <div className="text-lg font-bold leading-none text-darkTeal">{title}</div>
           <p className="line-clamp-2 text-[12px] leading-snug text-muted-foreground">
             {children}
           </p>

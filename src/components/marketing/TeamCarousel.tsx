@@ -10,7 +10,7 @@ export function TeamCarousel() {
 
   return (
     <section className="bg-white w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-[#bdd364]">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-[#648ed3]">
         Why Choose Us?
       </h2>
       <Carousel items={cards} />

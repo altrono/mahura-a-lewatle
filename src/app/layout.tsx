@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 
 export const metadata: Metadata = {
-  title: "MAHURA A LEWATLE PTY (LTD)| Reliable Water Supply & Groundwater Services | Borehole Drilling, Geophysical Surveys, and More",
+  title: "MAHURA A LEWATLE PTY (LTD) | Reliable Water Supply & Groundwater Services | Borehole Drilling, Geophysical Surveys, and More",
   description: "We specialize in sustainable water solutions, including rural area water supply, groundwater assessment, and geophysical surveys. Serving communities with expert borehole drilling and management across South Africa, including Western Cape, North West, Northern Cape, and Gauteng.",
   keywords: "water supply, rural water solutions, borehole drilling, groundwater assessment, geophysical surveys, geological mapping, water management, sustainable water solutions, rural water supply services, aquifer development, groundwater management, South Africa, Western Cape, North West, Northern Cape, Gauteng",
   icons: {
@@ -55,4 +55,7 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
 

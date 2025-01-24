@@ -59,7 +59,15 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			darkTeal: '#5da8ab',
+			lightTeal: "#a5d7cc",
+			darkBlue: "#295a94",
+			lightBlue: '#429aca',
+			lightGreen: "#d4db71",
+			darkGreen:"#5ca549",
+			noire: "#474747"
+
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

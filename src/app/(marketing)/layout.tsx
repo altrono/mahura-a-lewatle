@@ -12,7 +12,7 @@ export default function MarketingLayout({
     <div className="relative flex min-h-screen flex-col overflow-hidden">
         <SiteHeader />  
           <main className="flex-1">{children}</main>
-        <Footer />
+          <Footer />
       <ScrollToTop />
     </div>
   )

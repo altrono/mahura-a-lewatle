@@ -1,6 +1,9 @@
 import { HeroSection } from "@/components/hero-section"
 import { AboutUsSection } from "@/components/marketing/about-us-section"
 import { TeamCarousel } from "@/components/marketing/TeamCarousel"
+import { Services } from "@/components/services-section"
+
+
 // import { FeaturesSection } from "@/components/features-section"
 // import { TeamSection } from "@/components/team-section"
 // import { TestimonialsSection } from "@/components/testimonials-section"
@@ -13,7 +16,9 @@ import { TeamCarousel } from "@/components/marketing/TeamCarousel"
 export default function Home() {
   return (
     <main className="min-h-screen bg-black">
-      <HeroSection />  
+      
+      <HeroSection /> 
+      <Services />
       <TeamCarousel />
       <AboutUsSection />
       {/* <MissionSection />

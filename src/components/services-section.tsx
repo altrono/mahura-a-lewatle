@@ -1,117 +1,66 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Palette, Megaphone, TrendingUp, Users, Zap } from 'lucide-react'
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "./ui/button"
+import { DrillIcon as Drill,  TractorIcon as Ship, ShipIcon as Training } from 'lucide-react'
+import Link from "next/link"
 
 const services = [
   {
-    icon: Palette,
-    title: 'AI SaaS Applications',
-    description: "Leverage the power of artificial intelligence to streamline operations, enhance customer experiences, and improve decision-making with our AI-driven SaaS applications."
-  },
-  {
-    icon: Users,
-    title: 'Mobile Development',
-    description: "Need a custom mobile app? Our expert development team creates user-friendly, secure, and scalable solutions tailored to your business needs"
-  },
-  {
-    icon: Zap,
-    title: 'Ready-Made Templates',
-    description: "Get started quickly with our collection of professionally designed, customizable templates for websites, mobile apps, and more."
-  },
+    icon: Drill,
+    title: "Drilling",
+    description: "Providing reliable and sustainable water sources through advanced drilling techniques.",
 
-  {
-    icon: Code,
-    title: "Web Development",
-    description: "We create responsive and performant web applications tailored to your needs."
   },
   
   {
-    icon: Megaphone,
-    title: "SEO Optimization",
-    description: "SEO is the backbone of any successful online presence. With our expert SEO services, we help you rank higher on search engines, drive organic traffic, and increase visibility."
+    icon: Ship,
+    title: "Farming",
+    description: "Optimizing agricultural productivity with innovative farming practices and solutions.",
+
   },
   {
-    icon: TrendingUp,
-    title: "Business Growth",
-    description: "Strategic solutions to scale your business and increase market share."
+    icon: Training,
+    title: "Training",
+    description: "We train candidates for careers in the maritime sector as deck and engine room ratings",
   },
  
-
 ]
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100
-    }
-  }
-}
-
-export function ServicesSection() {
+export function Services() {
   return (
-    <section className="py-24 dark:bg-purple-950 bg-slate-100">
-      <div className="container px-4 mx-auto">
+    <section id="services" className="py-20 bg-teal-50 rounded-t-lg">
+      <div className="container mx-auto px-4">
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
-          variants={containerVariants}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
         >
-          <motion.h2 
-            className="text-3xl md:text-4xl font-bold mb-4"
-            variants={itemVariants}
-          >
-            Our <span className="text-purple-600 mt-10">Services</span>
-          </motion.h2>
-          <motion.p 
-            className="text-gray-700 text-lg dark:text-gray-400"
-            variants={itemVariants}
-          >
-            We provide comprehensive solutions to help your business thrive in the digital age.
-            Our services are designed to maximize efficiency and drive growth.
-          </motion.p>
+          <h2 className="text-4xl font-bold mb-4   text-lightBlue"><span className="text-darkTeal">Our</span> Services</h2>
+          <p className="text-gray-500">What can you do for you ?</p>
         </motion.div>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={containerVariants}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
           {services.map((service, index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full dark:bg-black/30 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 flex items-center justify-center flex-col">
-                  <service.icon className="h-12 w-12 text-purple-600 mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={`bg-lightTeal p-6 rounded-lg text-center group hover:bg-lightBlue transition-colors duration-300 hover:shadow-sm`}
+            >
+              <div className="mb-4 flex justify-center">
+                <service.icon className={`h-12 w-12 text-darkGreen group-hover:text-white transition-colors`} />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-darkGreen group-hover:text-white">{service.title}</h3>
+              <p className="text-gray-800 mb-4 group-hover:text-white">{service.description}</p>
+              
+              <Link href={`/services/${service.title.toLowerCase()}`} className="bg-gradient-to-tr from-teal-700 to-[#bdd364] text-white hover:to-teal-500 hover:from-[#bdd364] -ml-2 rounded-md mx-auto transition-colors duration-500  px-4 py-2 my-10">
+                See more..
+              </Link>
             </motion.div>
           ))}
-        </motion.div>
-      </div>
-      <div className="flex justify-center mt-10">
-        <Button>Get started</Button>
+        </div>
       </div>
     </section>
   )
