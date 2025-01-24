@@ -1,7 +1,7 @@
-const PartnerWithUsPage = () => {
+const MobileDevPage = () => {
     return (
       <div className="h-screen flex items-center justify-center flex-col pt-20">
-        <h1>Partner With Us </h1>
+        <h1>Training</h1>
         <p>Comming soon!</p>
         
   
@@ -9,5 +9,5 @@ const PartnerWithUsPage = () => {
     );
   };
   
-  export default PartnerWithUsPage;
+  export default MobileDevPage;
   
