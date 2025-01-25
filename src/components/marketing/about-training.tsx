@@ -7,7 +7,7 @@ export function AboutTraining() {
   return (
    
             <section id="about-us" className="bg-white  bg-[url('/about.png')] bg-cover  bg-center] ">
-              <div className="px-4 flex  flex-col md:flex-row w-full h-full py-20 md:px-20 bg-white/20  min-h-[400px]">
+              <div className="px-4 flex  flex-col md:flex-row w-full h-full py-20 md:px-20 bg-white/40  min-h-[400px]">
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export function AboutTraining() {
 different divisions of the marine sectors,
 Malt PTY (Ltd) was established to create a turnkey solution to bridge the lack
 of skill set in the oil and gas, offshore sector and port operations around the
-South African coastline/ waters.</p>
+South African coastline waters.</p>
                 </motion.div>   
               </div> 
             </section>
