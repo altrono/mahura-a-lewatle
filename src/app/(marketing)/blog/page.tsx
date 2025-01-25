@@ -1,4 +1,4 @@
-import { CustomHero } from "@/components/marketing/custom-hero";
+import { CustomHero } from "@/components/marketing/customHero";
 
 const PartnerWithUsPage = () => {
     return (

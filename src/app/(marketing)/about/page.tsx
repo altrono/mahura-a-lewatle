@@ -1,4 +1,4 @@
-import { CustomHero } from "@/components/marketing/custom-hero"
+import { CustomHero } from "@/components/marketing/customHero"
 // import { AboutContent } from "@/components/marketing/about-content"
 import { AboutStats } from "@/components/marketing/about-stats"
 // import { AboutTeam } from "@/components/marketing/about-team"
