@@ -1,11 +1,14 @@
+import { CustomHero } from "@/components/marketing/custom-hero";
+
 const PartnerWithUsPage = () => {
     return (
-      <div className="h-screen flex items-center justify-center flex-col pt-20">
+      <>
+        <CustomHero title="Our Blog" />
         <h1>Our Blog</h1>
         <p>Comming soon!</p>
         
   
-      </div>
+      </>
     );
   };
   

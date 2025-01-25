@@ -1,13 +1,16 @@
-const MobileDevPage = () => {
+import { CustomHero } from "@/components/marketing/custom-hero";
+
+const TrainingPage = () => {
     return (
-      <div className="h-screen flex items-center justify-center flex-col pt-20">
+      <>
+        <CustomHero title="Malt Training" />
         <h1>Training</h1>
         <p>Comming soon!</p>
         
   
-      </div>
-    );
+      </>
+    )
   };
   
-  export default MobileDevPage;
+  export default TrainingPage;
   
