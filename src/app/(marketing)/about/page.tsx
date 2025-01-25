@@ -7,7 +7,7 @@ import { AboutValues } from "@/components/marketing/about-values"
 export default function AboutPage() {
   return (
     <>
-      <CustomHero title="About Us" />
+      <CustomHero title="About Us"  />
       {/* <AboutContent /> */}
       <AboutStats />
       <AboutValues />

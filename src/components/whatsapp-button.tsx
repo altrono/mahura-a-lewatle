@@ -4,8 +4,8 @@ import { motion } from "framer-motion"
 import { PhoneIcon as WhatsappIcon } from 'lucide-react'
 
 export function WhatsAppButton() {
-  const phoneNumber = "+27719250250" // Replace with your actual WhatsApp number
-  const message = "Hello, bienvenue a Mirasal (PTY) LTD!" // Pre-filled message
+  const phoneNumber = "+27721896531" // Replace with your actual WhatsApp number
+  const message = "Hello, welcome to MAHURALEWATLE (PTY) LTD!" // Pre-filled message
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 

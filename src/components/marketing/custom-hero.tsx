@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 
-export function CustomHero({ title} : {title: string}) {
+export function CustomHero({ title, subTitle} : {title: string, subTitle?: string}) {
   return (
     <div className="relative min-h-[40vh] flex items-center justify-center">
       <div className="absolute inset-0 z-0">
@@ -21,6 +21,7 @@ export function CustomHero({ title} : {title: string}) {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
           {title}
         </h1>
+        <p className="text-gray-200">{subTitle && subTitle}</p>
       </motion.div>
     </div>
   )
