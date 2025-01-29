@@ -53,7 +53,7 @@ export function OurServices() {
             <div className=" mx-auto px-4 md:px-8 lg:px-10 py-8"> 
                 <h2 className="text-lightBlue text-4xl md:text-6xl font-bold mb-4 mt-8 text-center">Benefits Of <span className="text-lightGreen"> Our Services</span></h2>   
             </div>
-            <Image src='/bg-1.png' alt="benefit" width={800} height={300} className="max-h-[200px] max-w-[700px] "/>
+            <Image src='/bg-1.png' alt="benefit" width={800} height={500} className="max-h-[200px] max-w-[700px] rounded-md"/>
             <div className="grid grid-cols-3 gap-2 max-w-[700px] text-noire font-medium text-sm">
                 <p>To deliver quality maritime training in line with STCW convention and STCW code as applicable.</p>
                 <p>Our training is in line with statutory requirements.</p>
