@@ -12,7 +12,7 @@ export function CoreValues() {
                 <div className=" mx-auto px-4 md:px-8 lg:px-10 py-8"> 
                   <h2 className="text-lightBlue text-4xl md:text-6xl font-bold mb-4 mt-8 text-center">Our Core <span className="text-lightGreen">Values</span></h2>   
                 </div>
-                <div className="flex justify-center flex-col md:flex-row  max-w-6xl mx-auto">
+                <div className="flex justify-center flex-col md:flex-row  max-w-5xl mx-auto">
                     <motion.div 
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}

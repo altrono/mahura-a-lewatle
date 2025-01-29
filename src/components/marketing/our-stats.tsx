@@ -6,8 +6,8 @@ export function OurStats() {
   return (
     <section>
         <div className="relative min-h-[40vh] flex items-center justify-center max-w-4xl mx-auto">
-            <div className="absolute inset-0 z-0 bg-[url('/ship.png')] bg-contain bg-no-repeat bg-center">
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40" />
+            <div className="rounded-md absolute inset-0 z-0 bg-[url('/ship.png')] bg-contain bg-no-repeat bg-center">
+                <div className="rounded-md absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40" />
             </div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

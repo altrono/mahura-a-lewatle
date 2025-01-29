@@ -14,7 +14,7 @@ export function OurStaff() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }} className="relative">
-                <Image className="h-[340] " src={'/boss.png'} alt="boss" width={800} height={800} />  
+                <Image className="rounded-md h-[340] " src={'/boss.png'} alt="boss" width={800} height={800} />  
                 <p className="absolute bottom-12 text-center font-medium right-0 px-4 bg-white/40 h-32">Capt. <br />
                     Kabelo <br />
                     Assegai</p>
