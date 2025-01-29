@@ -13,17 +13,21 @@ export function AboutTraining() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
-                  className="w-full px-4 bg-blue-950/20"
+                  className="w-full px-4 bg-blue-950/80"
                 >      
-                  <h2 className="text-lightBlue text-4xl md:text-6xl font-bold mb-4 mt-8">About <span className="text-lightGreen">Us</span></h2>
-                  <p className="text-noir text-lg font-medium">Empowering Growth Through Water, Agriculture, and Skill Development</p>      
+                  <div className=" mx-auto px-4 md:px-8 lg:px-10 py-8">
+                    <h2 className="text-lightBlue text-4xl md:text-6xl font-bold mb-4 mt-8 text-center">About <span className="text-lightGreen">Us</span></h2>
+                    <p className="text-gray-200 text-center text-sm md:text-base ">
+                      Empowering Growth Through Water, Agriculture, and Skill Development.
+                    </p>
+                  </div>   
                 </motion.div> 
                 <motion.div 
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9 }}
                   viewport={{ once: true }}
-                  className=" py-8 px-4 bg-blue-950/20">
+                  className=" py-8 px-4 bg-blue-950/80">
                   <p className="text-gray-200 font-medium text-xl">MALT is an institution that trains and prepares competent and skilled seafarers for the oil and gas, offshore, merchant navy and port operations in the maritime sectors.</p>
                   <p className="text-gray-200 font-medium text-xl">We impart knowledge and skills of sea-going personnel/workforce within the
 different divisions of the marine sectors,

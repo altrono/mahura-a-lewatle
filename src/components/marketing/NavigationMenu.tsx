@@ -32,13 +32,13 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Contact",
-    href: "/about",
+    href: "#contact",
     description:
       "We value long-term partnerships with businesses aiming for digital growth. Let&#39;s collaborate to create impactful solutions together.",
   },
   {
     title: "Terms & Conditions",
-    href: "//about",
+    href: "/about",
     description:
       "We believe in the power of innovation and support startups with funding and mentorship. Explore opportunities to partner with us in driving the next big idea.",
   },

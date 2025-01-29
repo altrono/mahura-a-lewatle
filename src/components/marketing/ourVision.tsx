@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export function OurVision() {
   return (  
-            <section id="about-us" className="relative bg-white  bg-[url('/values.png')] bg-  bg-center] min-h-[500px] mb-20">
+            <section id="about-us" className="relative mt-20 pt-20  border-t-lightBlue   bg-[url('/values.png')] bg-  bg-center] min-h-[500px] mb-20">
               <div className="absolute min-h-full top-2/4 md:top-2.5/4  right-10 left-10 md:right-20 md:left-20">
                 <h1 className="text-4xl font-bold text-center text-gray-200">Our Vision</h1>
                 <motion.div 

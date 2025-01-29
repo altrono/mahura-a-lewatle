@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 text-gray-300 z-40">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
@@ -31,23 +31,24 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Supports & Contacts</h3>
             <ul className="space-y-2">
-              {["Address: [Your Business Address]",].map((item) => (
+              <li key={"email"}>
+                Email: <Link href="mailto:info@mahuralewatle.co.za?subject=Hello&body=I would like to get in touch." className="text-sm hover:text-teal-500 transition-all duration-300">
+                    info@mahuralewatle.co.za
+                    </Link>
+                </li>
+                <li key={"phone"}>
+                Phone: <Link href="tel:+27721896531" className="text-sm hover:text-teal-500 transition-all duration-300">
+                     +27 72 189 6531
+                  </Link>
+              </li>
+              {["Locations : Western Cape | North-West | Northern Cape | Gauteng",].map((item) => (
                 <li key={item}>
                   <Link href="#" className="text-sm hover:text-teal-500 transition-all duration-300">
                     {item}
                   </Link>
                 </li>
               ))}
-              <li key={"email"}>
-              Email: <Link href="mailto:info@mahuralewatle.co.za?subject=Hello&body=I would like to get in touch." className="text-sm hover:text-teal-500 transition-all duration-300">
-                   info@mahuralewatle.co.za
-                  </Link>
-              </li>
-              <li key={"phone"}>
-              Phone: <Link href="tel:+27721896531" className="text-sm hover:text-teal-500 transition-all duration-300">
-                     +27 72 189 6531
-                  </Link>
-              </li>
+            
             </ul>
           </div>
           <div>
